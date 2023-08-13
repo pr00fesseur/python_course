@@ -2,18 +2,17 @@ from pathlib import Path
 
 ROOT_DIR = Path(__file__).absolute().parent.parent
 
-file = open(ROOT_DIR / "rockyou.txt", encoding='utf-8')
-text: str = file.readline()
-counter = 0
+results = []
 
-while True:
-	try:
-		word = file.readline()
-		counter += 1
-		print(word)
-	except Exception:
-		break
+with open(ROOT_DIR / "rockyou.txt", encoding='utf-8') as file:
+    for line in file:
+        if 'user' in line:
+            print("Line:", line)
+            user_input = input("Do you want to add this line to results? (yes/no(for no press any key)): ")
+            if user_input.lower() == 'yes':
+                results.append(line.strip())
 
 file.close()
 
-print(counter)
+print("Results:", results)
+print("Number of added lines:", len(results))

@@ -6,9 +6,10 @@ name = "pypi"
 [packages]
 
 [dev-packages]
-black = "=23.7"
-flake = "=6.1"
-isort = "=5.12"
+black = "23.7"
+flake = "6.1"
+isort = "5.12"
+ipdb = "*"
 
 [requires]
 python_version = "3.11"
