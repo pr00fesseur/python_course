@@ -48,8 +48,8 @@ class Price:
 
 
 # Примеры
-price1 = Price(100, "RUB")
-price2 = Price(50, "RUB")
+price1 = Price(100, "USD")
+price2 = Price(50, "EUR")
 
 # Выполнение операций
 result_sum = price1 + price2
