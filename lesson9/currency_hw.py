@@ -1,6 +1,7 @@
 
 
 class Price:
+    
     exchange_rates = {"USD": 1.0,
                       "EUR": 0.93,
                       "RUB": 96.40}
