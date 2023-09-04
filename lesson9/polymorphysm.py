@@ -19,17 +19,14 @@ def _(a, b):  # Первая реализация (для типа int)
 
 @custom_add.register(str)
 def _(a, b):  # Вторая реализация (для типа str)
-    return f"Concat {a}{b}"
+    return f"Concat {a} {b}"
 
 
 print(
-    custom_add(1, 1)
-) 
+    custom_add(1, 1)) 
 
 print(
-    custom_add("1", "1")
-)
+    custom_add("1", "1"))
 
 print(
-    custom_add(12.2, "1")
-)
+    custom_add(12.2, "1"))
