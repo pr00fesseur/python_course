@@ -17,13 +17,13 @@ class PaymentSystem:
     def __getattribute__(self, name: str) -> Any:
         print(f"Accessing the attribute: {name}")
 
-        # if name in methods_blacklist and name not in ALLOWED:
-        #     raise Exception(f"The attribute {name} is private")
+        if name in methods_blacklist and name not in ALLOWED:
+            raise Exception(f"The attribute {name} is private")
 
-        try:
-            ALLOWED.remove(name)
-        except:
-            pass
+        # try:
+        #     ALLOWED.remove(name)
+        #  except:
+        #      pass
 
         return object.__getattribute__(self, name)
         # return super().__getattribute__(name)
