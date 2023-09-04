@@ -1,5 +1,5 @@
-from pprint import pprint as print
 from itertools import zip_longest
+from pprint import pprint as print
 
 
 class Person:

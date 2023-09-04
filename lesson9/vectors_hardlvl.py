@@ -18,7 +18,10 @@ class Vector:
         return Vector(new_start, new_end)
 
     def __str__(self) -> str:
-        return f"Vector ({self.start[0]}",f"{self.start[1]});({self.end[0]},{self.end[1]})"
+        return (
+            f"Vector ({self.start[0]}",
+            f"{self.start[1]});({self.end[0]},{self.end[1]})",
+        )
 
 
 a = Vector((0, 0), (3, 1))
