@@ -5,9 +5,7 @@ from functools import singledispatch
 
 
 @singledispatch
-def custom_add(
-    a, b):
-
+def custom_add(a, b):
     raise NotImplementedError("Unsupported type")
 
 
@@ -22,11 +20,8 @@ def _(a, b):  # Вторая реализация (для типа str)
     return f"Concat {a} {b}"
 
 
-print(
-    custom_add(1, 1)) 
+print(custom_add(1, 1))
 
-print(
-    custom_add("1", "1"))
+print(custom_add("1", "1"))
 
-print(
-    custom_add(12.2, "1"))
+print(custom_add(12.2, "1"))

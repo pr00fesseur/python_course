@@ -1,4 +1,5 @@
 from typing import Generic, TypeVar
+
 import requests
 
 # response = requests.get("https://pokeapi.co/api/v2/pokemon/12")
@@ -16,11 +17,7 @@ class ApiClient:
     def __init__(self, base_url: str) -> None:
         self.base_url: str = base_url
 
-    def get_response(
-    self,
-    method: str,
-    endpoint: str
-) -> dict:
+    def get_response(self, method: str, endpoint: str) -> dict:
         if method not in self.ALLOWED_METHODS:
             raise NotImplementedError(f"Method {method} is not implemented")
 
@@ -72,9 +69,7 @@ class ApiClientContext(Generic[_ApiClient]):
 # )
 
 
-with ApiClientContext(
-    base_url="https://pokeapi.co/api/v2"
-) as client:
+with ApiClientContext(base_url="https://pokeapi.co/api/v2") as client:
     ditto_data = client.get_response(method="get", endpoint="/pokemon/dittoss")
     print(f"Fetched pokemon: {ditto_data['name']}")
 
