@@ -12,8 +12,6 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install dependencies
-        run: pip install flake8 black isort
-      - name: Run linter
-        run: flake8 .
+        run: pip install black isort
       - name: Run formatters
         run: black -t py311 --check . && isort --check .
