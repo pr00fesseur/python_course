@@ -5,4 +5,5 @@ def foo(n: int):
     else:
         print("> 10")
 
+
 foo(4)

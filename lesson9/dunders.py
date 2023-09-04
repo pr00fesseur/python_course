@@ -1,5 +1,5 @@
-import string
 import random
+import string
 
 # class Team:
 #     def __init__(self, name) -> None:

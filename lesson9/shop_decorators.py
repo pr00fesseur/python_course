@@ -1,10 +1,8 @@
-
 # def staticmethod(func):
 #     def inner(*args, **kwargs):
 #         if "self" in args:
 #             del from args #неккоректное удаление
 #         return func(*args, **kwargs)
-
 
 
 class Shop:
@@ -22,7 +20,7 @@ class Shop:
         # ...
         cls.USERS_MAX_SIZE
         # cls == Shop
-        #Shop.login()
+        # Shop.login()
         bershka = Shop()
         zara = Shop()
         return bershka, zara
@@ -33,12 +31,11 @@ class Shop:
         return 12
 
     def buy(self, product: dict):
-        #self.login(self.user....)
+        # self.login(self.user....)
         return None
 
+
 zara, bershka = Shop.build_new("example.com")
-
-
 
 
 zara.build_new("bershka.com")

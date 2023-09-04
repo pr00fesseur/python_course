@@ -1,6 +1,5 @@
 from typing import Any
 
-
 methods_blacklist = [
     "_connect_to_the_atm",
     "_count_the_cash",
