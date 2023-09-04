@@ -9,7 +9,8 @@ with open(ROOT_DIR / "rockyou.txt", encoding="utf-8") as file:
         if "user" in line:
             print("Line:", line)
             user_input = input(
-                "Do you want to add this line to results? (yes/no(for no press any key)): "
+                "Do you want to add this line to results?"
+                "(yes/no(for no press any key)): "
             )
             if user_input.lower() == "yes":
                 results.append(line.strip())
