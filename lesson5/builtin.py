@@ -1,3 +1,4 @@
+from itertools import zip_longest
 from pprint import pprint as print
 
 
@@ -94,8 +95,6 @@ def foo():
 
 
 # print(help(foo))
-
-from itertools import zip_longest
 
 names = ["John", "Marry", "Jack"]
 ages = [20, 30, 40, 50]

@@ -42,6 +42,6 @@ class open:
             raise NotImplementedError
 
         return self._file_mode_instance
-    
+
     def __exit__(self, *args, **kwargs):
         self._file_mode_instance.close()
