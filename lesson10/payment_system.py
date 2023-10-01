@@ -44,7 +44,7 @@ class Diamond(Shape):
         return self.a * self.b
 
 
-class Validator:
+class Validator: 
     def validate_shape(
         self,
         shape: Shape,
