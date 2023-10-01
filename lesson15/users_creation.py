@@ -1,7 +1,6 @@
 import string
-from random import randint, choice
 from dataclasses import dataclass
-
+from random import choice, randint
 from typing import Generator
 
 

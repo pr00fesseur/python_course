@@ -1,7 +1,8 @@
 import asyncio
 import sys
-import httpx
 from typing import Coroutine
+
+import httpx
 
 BASE_URL = "https://pokeapi.co/api/v2/pokemon/{id_}"
 

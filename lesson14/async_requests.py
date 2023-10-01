@@ -1,8 +1,9 @@
-from typing import Coroutine
 import asyncio
+import sys
+from typing import Coroutine
+
 import aiohttp
 import httpx
-import sys
 
 # from time import perf_counter
 
